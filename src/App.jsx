@@ -19,7 +19,7 @@ const App = () => {
     setSuccess('');
 
     try {
-      const response = await axios.post('http://localhost:3000/login', {
+      const response = await axios.post(import.meta.env.VITE_API_URL, {
         username,
         password
       });
@@ -50,10 +50,10 @@ const App = () => {
   return (
     <div className="background" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="login-container">
-        <h2>Login</h2>
+        <h2>Login Your Parking Asst.</h2>
         {error && <p className="error">{error}</p>}
         {success && <p className="success">{success}</p>}
-        {isLoggedIn && <p className="welcome">Welcome to AllowWorld!</p>}
+        {isLoggedIn && <p className="welcome">Welcome to HellowWorld!</p>}
         <form onSubmit={handleSubmit}>
           <div>
             <label className="label">Username:</label>
