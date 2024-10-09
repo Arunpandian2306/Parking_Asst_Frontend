@@ -64,10 +64,11 @@ const CarList = () => {
           <label htmlFor="sortOrder">Order:</label>
           <select id="sortOrder" value={sortOrder} onChange={handleSortOrderChange} className="sort-dropdown">
             <option value="asc">Ascending</option>
-            <option value="desc">Descending</option>
+            <option value="desc">Descending</option>        
           </select>
-        </div>
+        </div>   
       </div>
+      <br></br>
       <div className="car-grid">
         {cars.map((car) => (
           <div key={car._id} className="car-item">
