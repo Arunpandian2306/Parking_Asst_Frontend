@@ -14,7 +14,7 @@ const CarList = () => {
     try {
       const accessToken = localStorage.getItem('accessToken');
       const response = await axios.get(
-        `http://localhost:3000/carDetails/get-all/cars?page=${page}&limit=${limit}&sortField=${field}&sortOrder=${order}`,
+        `${import.meta.env.VITE_API_URL}/carDetails/get-all/cars?page=${page}&limit=${limit}&sortField=${field}&sortOrder=${order}`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,
