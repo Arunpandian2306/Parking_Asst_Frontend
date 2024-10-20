@@ -1,8 +1,25 @@
-# React + Vite
+# Car Parking Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based car parking management system that allows users to manage car parking spaces, register cars, and track available spots. It supports user authentication, car registration, and a real-time view of available parking slots.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User Authentication: Login and registration functionality.
+- Car Management: Register, update, and delete car details.
+- Parking Slot Management: View available and occupied parking slots.
+- Pagination: Display car details with pagination.
+- Real-time Updates: Get real-time updates of car movements in the parking lot.
+- API Integration: API support for fetching and updating parking data.
+
+## Tech Stack
+
+- **Frontend**: React, Vite
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Other Tools**: Docker, Postman (for API testing)
+
+## Prerequisites
+
+- **Node.js**: v18.x or later
+- **Docker** 
+- **MongoDB**
